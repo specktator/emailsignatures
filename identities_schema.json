@@ -1,0 +1,165 @@
+{
+	"identities":[
+		{
+			"template":"thinnchic",
+			"user": {
+				"greeting": {
+					"label": "Greeting",
+					"data": "Best regards",
+					"type": "text"
+				},
+				"usersname" : {
+					"label": "Full Name",
+					"data": "Mick Jagger",
+					"type": "text"
+				},
+				"jobtitle": {
+					"label": "Job Title",
+					"data": "Singer",
+					"type": "text"
+				},
+				"logourl": {
+					"label": "Logo URL (Link to your logo)",
+					"data": "http://wwwrollingstones.wpengine.netdna-cdn.com/wp-content/themes/rolling-stones-2014/assets/images/lips.png",
+					"type": "text"
+				},
+				"company": {
+					"label": "Company Name",
+					"data": "The Rolling Stones",
+					"type": "text"
+				},
+				"street": {
+					"label": "Address",
+					"data": "Street of love 1512A",
+					"type": "text"
+				},
+				"city": {
+					"label": "City",
+					"data": "Athens",
+					"type": "text"
+				},
+				"stateprovince": {
+					"label": "State/Province",
+					"data": "Soho",
+					"type": "text"
+				},
+				"postalcode": {
+					"label": "ZIP/Postal Code",
+					"data": "1962",
+					"type": "text"
+				},
+				"country": {
+					"label": "Country",
+					"data": "UK",
+					"type": "text"
+				},
+				"telephone": {
+					"label": "Telephone",
+					"data": "+44 123 123 123",
+					"type": "text"
+				},
+				"mobile": {
+					"label": "Mobile",
+					"data": "+44 654 21 65 289",
+					"type": "text"
+				},
+				"email": {
+					"label": "e-mail",
+					"data": "mickjagger@rollingstones.com",
+					"type": "email"
+				},
+				"website": {
+					"label": "website",
+					"data": "www.rollingstones.com",
+					"type": "text"
+				},
+				"disclaimer": {
+					"label": "Disclaimer",
+					"data": "Important: This e-mail and its attachments are intended for the above named only and may be confidential. If they have come to you in error you must take no action based on them, nor must you copy or show them to anyone; please contact us immediately.",
+					"type": "text"
+				}
+			}
+		},
+		{
+			"template":"thicknbold",
+			"user": {
+				"greeting": {
+					"label": "Greeting",
+					"data": "Best regards",
+					"type": "text"
+				},
+				"usersname" : {
+					"label": "Full Name",
+					"data": "Christos Dimas",
+					"type": "text"
+				},
+				"jobtitle": {
+					"label": "Job Title",
+					"data": "Singer",
+					"type": "text"
+				},
+				"logourl": {
+					"label": "Logo URL (Link to your logo)",
+					"data": "http://wwwrollingstones.wpengine.netdna-cdn.com/wp-content/themes/rolling-stones-2014/assets/images/lips.png",
+					"type": "text"
+				},
+				"company": {
+					"label": "Company Name",
+					"data": "The Rolling Stones",
+					"type": "text"
+				},
+				"street": {
+					"label": "Address",
+					"data": "Street of love 1512A",
+					"type": "text"
+				},
+				"city": {
+					"label": "City",
+					"data": "Athens",
+					"type": "text"
+				},
+				"stateprovince": {
+					"label": "State/Province",
+					"data": "Soho",
+					"type": "text"
+				},
+				"postalcode": {
+					"label": "ZIP/Postal Code",
+					"data": "1962",
+					"type": "text"
+				},
+				"country": {
+					"label": "Country",
+					"data": "UK",
+					"type": "text"
+				},
+				"telephone": {
+					"label": "Telephone",
+					"data": "+44 123 123 123",
+					"type": "text"
+				},
+				"mobile": {
+					"label": "Mobile",
+					"data": "+44 654 21 65 289",
+					"type": "text"
+				},
+				"email": {
+					"label": "e-mail",
+					"data": "mickjagger@rollingstones.com",
+					"type": "email"
+				},
+				"website": {
+					"label": "website",
+					"data": "www.rollingstones.com",
+					"type": "text"
+				},
+				"disclaimer": {
+					"label": "Disclaimer",
+					"data": "Important: This e-mail and its attachments are intended for the above named only and may be confidential. If they have come to you in error you must take no action based on them, nor must you copy or show them to anyone; please contact us immediately.",
+					"type": "text"
+				}
+			}
+		}
+
+	]
+}

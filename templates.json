@@ -1,0 +1,37 @@
+{
+  "templates": {
+    "Thin 'n' Chic": {
+    	"uri":"thinnchic",
+    	"url":"/templates/thinnchic.html",
+        "description":"My professional, email signature templates",
+        "socialnetworks":{
+            "twitter":"fa fa-twitter-square",
+            "facebook":"fa fa-facebook-square",
+            "googleplus":"fa fa-google-plus-square"
+        },
+        "creator":{
+            "name":"specktator",
+            "site":"http://specktator.net",
+            "socialmedia":{
+                "twitter":"@specktator_",
+                "gitHub":"@specktator",
+                "facebook": "http://facebook.com/totallnoob"
+            }
+        }
+    },
+    "Thick 'n' Bold": {
+    	"uri":"thicknbold",
+    	"url":"/templates/thicknbold.html",
+        "description":"My professional, email signature templates",
+        "creator":{
+            "name":"specktator",
+            "site":"http://specktator.net",
+            "socialmedia":{
+                "twitter":"@specktator_",
+                "gitHub":"@specktator",
+                "facebook": "http://facebook.com/totallnoob"
+            }
+        }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+<div class="thumbs">
+	{{#each templates}}
+	<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+		<a href="#/template/{{this.uri}}" class="thumbnail">
+			<img src="templates/{{this.uri}}.png" alt="" class="img-responsive"></img>
+		</a>
+		{{#if this.creator}}
+			<p><span class="detailsTag">Author</span> : {{this.creator.name}}</p>
+			<p><span class="detailsTag">Website</span> : <a href="{{this.creator.site}}">{{this.creator.site}}</a></p>
+			{{#if this.creator.socialmedia}}
+				{{#each this.creator.socialmedia}}
+					<p><span class="detailsTag">{{@key}}</span> : <a href="#">{{this}}</a></p>
+				{{/each}}
+			{{/if}}
+			<p><span class="detailsTag">Description</span> : {{this.description}}</p>
+		{{/if}}
+	</div>
+	{{/each}}
+</div>

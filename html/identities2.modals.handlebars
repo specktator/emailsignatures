@@ -1,0 +1,10 @@
+        <p>{{text}}</p>
+        {{#each body}}
+        <div class="thumbnail">
+          <img src="{{this.user.logourl.data}}" class="img-responsive">
+          <div class="caption">
+          <p>Template name: {{this.template}}</p>
+           <p>{{this.user.usersname.data}}</p> 
+          </div>
+        </div>
+        {{/each}}

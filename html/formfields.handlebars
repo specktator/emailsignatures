@@ -1,0 +1,17 @@
+<div id="userform" class="col-lg-8">
+	<form role="form" class="form-horizontal" data-toggle="validator">
+		{{#each user}}
+		<div class="form-group">
+			<label for="{{@key}}" class="col-sm-2 control-label">{{this.label}}</label>
+			<div class="col-sm-10">
+				<input type="{{@key}}" name="{{@key}}" class="form-control" id="{{@key}}" placeholder="{{this.data}}" data-error="Not valid value!"></input>
+				<div class="help-block with-errors"></div>
+			</div>
+		</div>
+		{{/each}}
+	</form>
+	<button type="button" data-toggle="modal" data-target="#modal" id="cls" class="btn btn-primary">Get signature</button> 
+	<button type="button" data-toggle="" data-target="#save" id="save" class="btn btn-primary">Save for later</button>
+	<button type="button" data-toggle="modal" data-target="#identitiesModal" id="loadbtn" class="btn btn-primary">Load identities</button>
+	<button type="button" data-toggle="" data-target="" id="clear" class="btn btn-primary">Delete All</button>
+</div>

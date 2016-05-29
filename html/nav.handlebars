@@ -1,0 +1,24 @@
+	      <ul class="nav navbar-nav">
+	        <li><a href="https://github.com/specktator/emailsignatures"><i class="fa fa-github-square"></i> gitHub</a></li>
+	        <li><a href="https://github.com/specktator/emailsignatures"><i class="fa fa-medkit"></i> Help</a></li>
+	        <li><a href="http://totallynoob.com">Totallynoob.com</a></li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Author<span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="https://twitter.com/specktator_"><i class="fa fa-twitter-square" style="color:#55ACEE;"></i> @specktator_</a></li>
+	            <li><a href="#"><i class="fa fa-comment"></i> specktator@totallynoob.com <small>(Jabber)</small></a></li>
+	            <li><a href="http://totallynoob.com/author/specktator_/"><i class="fa fa-file-text-o"></i> Articles</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="https://www.facebook.com/totallynoob/"><i class="fa fa-facebook-official" style="color:#3A5795;"></i> totallynoob page</a></li>
+	            <li><a href="https://twitter.com/totallynoob"><i class="fa fa-twitter-square" style="color:#55ACEE;"></i> @totallynoob</a></li>
+	          </ul>
+	        </li>
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Templates<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+				{{#each templates}}
+					<li><a href="#/template/{{this.uri}}">{{@key}}</a></li>
+				{{/each}}
+				</ul>
+			</li>
+	      </ul>

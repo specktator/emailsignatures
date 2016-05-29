@@ -1,0 +1,37 @@
+<div style="padding: 5px 0; overflow:hidden; font-family: Arial Black; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; font-size: 11px;"><span style="float:left; width: 100%;">{{user.greeting.data}},</span> 
+<span style="width:50%;border-bottom:1px solid #333;float:left; margin-top:10px;"></span>
+<span style="width:100%; float:left; padding: 5px 0; "> 
+{{user.usersname.data}} 
+{{user.jobtitle.data}} 
+</span>
+ 
+ <div style="width:100%;float:left; padding: 5px 0;">
+<img src="{{user.logourl.data}}" alt="{{user.company.data}} logo">
+</div>
+ 
+ <div style="width:100%;float:left; padding: 5px 0;">
+{{user.street}} {{user.number.data}}, {{user.postalcode.data}} {{user.region.data}} | {{user.state.data}} | {{user.country.data}} 
+ 
+ </div>
+
+ <div style="width:100%;float:left; padding: 5px 0"> 
+<b>Tel:</b>
+<span style="color:#4B83AE;">{{user.telephone.data}}</span> | <b>Mobile:</b> 
+<span style="color:#4B83AE;">{{user.mobile.data}}</span> 
+<div style="float:left; width:100%; padding: 5px 0;">
+<b>e-mail: </b><a href="mailto:{{user.email.data}}" style="color:#eb6864;">{{user.email.data}}</a> | <b>Website: </b>
+<a href="http://{{user.website.data}}" style="color:#eb6864;">{{user.website.data}}</a>  
+</div>
+</div>
+{{#if user.socialnetwork}}
+	<div style="width:100%; float: left; padding: 5px 0;">
+		{{#each user.socialnetwork}}
+			<a href="{{this}}">{{@key}}</a> | 
+		{{/each}}
+	</div>
+{{/if}}
+</div>
+<span style="width:100%;border-bottom:1px solid #333;float:left; margin-top:10px; font-style: italic;"></span>
+<div style="width:100%;float:left; padding: 5px 0; color:#9C9C9C;">{{user.disclaimer.data}}</div>
+</div>	
+</div>
