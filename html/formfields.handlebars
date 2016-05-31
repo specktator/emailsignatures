@@ -4,7 +4,11 @@
 		<div class="form-group">
 			<label for="{{@key}}" class="col-sm-2 control-label">{{this.label}}</label>
 			<div class="col-sm-10">
+				{{#ifeq @key value="disclaimer"}}
+				<textarea type="{{@key}}" name="{{@key}}" class="form-control"  rows="6" id="{{@key}}" placeholder="{{this.data}}" data-error="Not valid value!"></textarea>
+				{{else}}
 				<input type="{{@key}}" name="{{@key}}" class="form-control" id="{{@key}}" placeholder="{{this.data}}" data-error="Not valid value!"></input>
+				{{/ifeq}}
 				<div class="help-block with-errors"></div>
 			</div>
 		</div>

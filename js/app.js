@@ -97,10 +97,16 @@ var app = Backbone.Model.extend({
 				facebook:"fa fa-facebook-square",
 				googleplus:"fa fa-google-plus-square"
 			}
-		}
+		},
+		sigloaded: false
 	},
 
 	name:"email signatures",
+
+	initialize: function()
+	{
+		Handlebars.registerHelper('ifeq',this.ifeq);
+	},
 
 	loadScripts: function(jsonfile){
 		var scripts = [];
@@ -137,6 +143,14 @@ var app = Backbone.Model.extend({
 		$.get('templates/'+name+'.html').done(function(data){
 			callback(data);
 		});
+	},
+	ifeq: function(conditional,options)
+	{
+		if (options.hash.value === conditional) {
+			return options.fn(this);
+		} else {
+			return options.inverse(this);
+		}
 	}
 });
 
@@ -156,9 +170,7 @@ var identitiesModel = Backbone.Model.extend({
 
 	list: function()
 	{
-		// ids = this.ls.getItem('identities');
 		ids = {};
-		console.log(Object.keys(this.ls).length);
 		for(var key in this.ls)
 		{
 			if(!this.ls.hasOwnProperty(key) || /sig-/g.test(key) || !/sig[0-9]*/g.test(key)) continue;
@@ -316,6 +328,7 @@ var emailSigView = Backbone.View.extend({
 
 	events:{
 		"keyup input" : "update",
+		"keyup textarea" : "update",
 		"keydown input" : "clearTM",
 		"paste input" : "update",
 		"click #cls" : "copyModal",
@@ -397,8 +410,7 @@ var emailSigView = Backbone.View.extend({
 		{
 			data = $.extend({},model.get("data"),data);
 		}
-		// if(model.get("sigid")) model.set({data: this.identities.getId(model.get("sigid")).user});
-		model.set({ data: (model.get("sigid"))? $.extend({},data,this.identities.getId(model.get("sigid")).user): data });
+		this.loadSigData(data);
 		this.render();
 	},
 
@@ -451,6 +463,15 @@ var emailSigView = Backbone.View.extend({
 		tpldata = { user: $.extend({},this.model.get("defaultData").user, this.model.get("data"))};
 		for (var i in tpldata.user) {
 			(tpldata.user[i].label)? $('#'+i).prop('placeholder',tpldata.user[i].data) : $('#'+i).val(tpldata.user[i].data);
+		}
+	},
+
+	loadSigData: function(data)
+	{
+		if(this.model.get("sigid") && this.model.get("sigloaded") === false){
+			this.model.set({ data: $.extend({},data,this.identities.getId(this.model.get("sigid")).user), sigloaded: true });
+		}else{
+			this.model.set({data:data});
 		}
 	},
 
