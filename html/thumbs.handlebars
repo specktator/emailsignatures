@@ -4,6 +4,7 @@
 		<a href="#/template/{{this.uri}}" class="thumbnail">
 			<img src="templates/{{this.uri}}.png" alt="" class="img-responsive"></img>
 		</a>
+		<p><span class="detailsTag">Template Name:</span>&nbsp;{{@key}}</p>
 		{{#if this.creator}}
 			<p><span class="detailsTag">Author</span> : {{this.creator.name}}</p>
 			<p><span class="detailsTag">Website</span> : <a href="{{this.creator.site}}">{{this.creator.site}}</a></p>
